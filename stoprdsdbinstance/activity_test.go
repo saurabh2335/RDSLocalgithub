@@ -49,8 +49,8 @@ func TestEval(t *testing.T) {
 	tc := test.NewTestActivityContext(getActivityMetadata())
 
 
-	tc.SetInput("accessKey", "AKIAI3VJTISFSV55MY7Q")
-	tc.SetInput("secretKey", "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")
+	tc.SetInput("accessKey", "***********************")
+	tc.SetInput("secretKey", "***********************"))
 	tc.SetInput("region", "ap-southeast-2")
 	tc.SetInput("dbInstanceIdentifier", "flogordsinstance")
 	tc.SetInput("dbSnapshotIdentifier", "")
