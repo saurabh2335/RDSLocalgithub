@@ -5,7 +5,7 @@
   "type": "flogo:activity",
   "description": "Stop Running RDS DB Instance",
   "author": "Saurabh Wagh <swagh@tibco.com>",
-  "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/stoprdsdbinstance",
+  "ref": "https://github.com/saurabh2335/RDSLocalgithub/tree/master/stoprdsdbinstance",
   "inputs":[
     {
       "name": "accessKey",
