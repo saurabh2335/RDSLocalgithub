@@ -1,0 +1,46 @@
+{
+  "name": "Amazon RDS - StopDBInstance",
+  "title": "Amazon RDS - StopDBInstance",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "Stop Running RDS DB Instance",
+  "author": "Saurabh Wagh <swagh@tibco.com>",
+  "ref": "github.com/saurabh2335/RDSLocalgithub/stoprdsdbinstance",
+  "inputs":[
+    {
+      "name": "accessKey",
+      "type": "string",
+      "required": "true"
+    },
+    {
+      "name": "secretKey",
+      "type": "string",
+      "required": "true"
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "required": "true",
+      "allowed" : ["us-east-2","us-east-1","us-west-1","us-west-2","ap-south-1","ap-northeast-2","ap-southeast-1","ap-southeast-2","ap-northeast-1","cn-northwest-1","ca-central-1","eu-central-1","eu-west-1","eu-west-2","sa-east-1"]
+    },
+	{
+      "name": "dbInstanceIdentifier",
+      "type": "string",
+      "required": "true"
+    },
+	{
+      "name": "dbSnapshotIdentifier",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "response",
+      "type": "string"
+    },
+	{
+      "name": "status",
+      "type": "string"
+    }
+  ]
+}
